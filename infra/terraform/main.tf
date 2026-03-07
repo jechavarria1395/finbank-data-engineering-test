@@ -53,3 +53,37 @@ resource "azurerm_mssql_firewall_rule" "allow_my_ip" {
   start_ip_address = "0.0.0.0"
   end_ip_address   = "0.0.0.0"
 }
+
+
+resource "azurerm_log_analytics_workspace" "log_analytics" {
+  name                = var.log_analytics_name
+  location            = azurerm_resource_group.finbank_rg.location
+  resource_group_name = azurerm_resource_group.finbank_rg.name
+  sku                 = "PerGB2018"
+  retention_in_days   = 30
+}
+
+
+resource "azurerm_data_factory" "data_factory" {
+  name                = var.data_factory_name
+  location            = azurerm_resource_group.finbank_rg.location
+  resource_group_name = azurerm_resource_group.finbank_rg.name
+}
+
+data "azurerm_client_config" "current" {}
+
+resource "azurerm_key_vault" "key_vault" {
+  name                        = var.key_vault_name
+  location                    = azurerm_resource_group.finbank_rg.location
+  resource_group_name         = azurerm_resource_group.finbank_rg.name
+  tenant_id                   = data.azurerm_client_config.current.tenant_id
+  sku_name                    = "standard"
+  purge_protection_enabled    = false
+}
+
+resource "azurerm_databricks_workspace" "databricks" {
+  name                = var.databricks_workspace_name
+  location            = azurerm_resource_group.finbank_rg.location
+  resource_group_name = azurerm_resource_group.finbank_rg.name
+  sku                 = "standard"
+}

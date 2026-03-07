@@ -26,3 +26,19 @@ variable "sql_admin_password" {
   description = "SQL admin password"
   sensitive   = true
 }
+
+variable "data_factory_name" {
+  default = "finbank-adf-demo"
+}
+
+variable "databricks_workspace_name" {
+  default = "finbank-databricks-demo"
+}
+
+variable "key_vault_name" {
+  default = "finbank-kv-demo-123"
+}
+
+variable "log_analytics_name" {
+  default = "finbank-log-demo"
+}
