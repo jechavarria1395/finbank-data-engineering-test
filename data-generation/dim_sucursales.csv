@@ -1,201 +1,201 @@
 sucursal_id,region,ciudad,tipo_oficina
-1,centro,North Brittanyland,secundaria
-2,norte,Lake Jennifer,secundaria
-3,centro,Port George,secundaria
-4,norte,West Steventon,principal
-5,norte,North Taylorbury,secundaria
-6,norte,Alexandriachester,principal
-7,norte,Jennahaven,principal
-8,centro,South Corey,principal
-9,sur,Rachelmouth,principal
-10,centro,Lake Mary,principal
-11,sur,South Phillip,secundaria
-12,sur,Erichaven,principal
-13,norte,Edwardsstad,secundaria
-14,norte,Malonetown,secundaria
-15,centro,Port Rebeccafort,principal
-16,centro,Terrellmouth,secundaria
-17,sur,North Davidchester,secundaria
-18,sur,Port Mikefurt,principal
-19,norte,Lake David,secundaria
-20,centro,Thompsonton,secundaria
-21,norte,West Jasonstad,secundaria
-22,norte,East Justinbury,secundaria
-23,sur,Monicahaven,principal
-24,norte,Brandonport,principal
-25,sur,East Philip,secundaria
-26,norte,Griffinhaven,secundaria
-27,centro,South Amanda,secundaria
-28,sur,South Phillip,secundaria
-29,sur,Omarshire,secundaria
-30,norte,Port Kimberlytown,principal
-31,centro,Glassburgh,secundaria
-32,sur,East Kennethshire,secundaria
-33,norte,Port Mariaberg,principal
-34,centro,East Amy,principal
-35,sur,Millerbury,secundaria
-36,sur,Brianmouth,secundaria
-37,sur,Hollyside,secundaria
-38,sur,Lake Brian,secundaria
-39,centro,Danielburgh,principal
-40,sur,Port Seanchester,principal
-41,sur,Delacruzville,secundaria
-42,norte,South Gregoryberg,secundaria
-43,norte,Paultown,secundaria
-44,centro,Terryview,principal
-45,norte,Cameronshire,secundaria
-46,centro,Georgeland,principal
-47,centro,West Julia,secundaria
-48,sur,Knoxstad,secundaria
-49,centro,North Gwendolynport,principal
-50,sur,Wheelerburgh,secundaria
-51,centro,Port Mark,secundaria
-52,centro,Johnhaven,secundaria
-53,centro,South Erikhaven,secundaria
-54,norte,East Aliceberg,principal
-55,sur,Cabreraland,secundaria
-56,sur,East Vicki,principal
-57,centro,Cervantestown,secundaria
-58,norte,Lake Ericamouth,secundaria
-59,centro,Moorehaven,secundaria
-60,norte,Ramirezchester,secundaria
-61,sur,Claireburgh,principal
-62,centro,West Kristenville,principal
-63,norte,Walshfort,secundaria
-64,centro,Lewisfort,principal
-65,centro,Randyborough,principal
-66,norte,Rosebury,secundaria
-67,norte,Lesliemouth,secundaria
-68,sur,Blacktown,principal
-69,sur,Millerville,secundaria
-70,norte,Johnland,principal
-71,norte,North Ryan,principal
-72,norte,New David,principal
-73,centro,Pacehaven,secundaria
-74,norte,Port Christopher,secundaria
-75,sur,New Dawn,secundaria
-76,centro,North Bernardmouth,principal
-77,centro,Sarahview,secundaria
-78,centro,Jamesside,principal
-79,norte,New Christina,secundaria
-80,sur,North Ann,secundaria
-81,norte,North Nathan,secundaria
-82,centro,Matthewville,secundaria
-83,norte,Brownton,principal
-84,norte,West Jennifer,secundaria
-85,centro,East Barry,principal
-86,centro,Mooreland,principal
-87,norte,East Adambury,secundaria
-88,centro,New Cheryl,secundaria
-89,centro,Riceton,secundaria
-90,centro,Brewerborough,secundaria
-91,centro,New Williamtown,secundaria
-92,centro,Christineside,principal
-93,sur,Davidport,principal
-94,norte,South Jamesberg,secundaria
-95,sur,South Peter,secundaria
-96,sur,Ethanview,secundaria
-97,sur,Lake Timothyberg,principal
-98,sur,Braunbury,secundaria
-99,centro,Kingborough,principal
-100,sur,Juliamouth,secundaria
-101,norte,West Jackie,principal
-102,centro,New Nicole,principal
-103,norte,Huntmouth,principal
-104,centro,New Keithfurt,secundaria
-105,norte,Veronicamouth,principal
-106,sur,Loganfort,secundaria
-107,centro,West Nicholas,principal
-108,sur,Port Chase,principal
-109,sur,New Markside,secundaria
-110,centro,New Victoria,principal
-111,norte,New Madison,secundaria
-112,centro,Andersonfort,secundaria
-113,sur,Fostermouth,principal
-114,centro,Port Michaelhaven,secundaria
-115,norte,New Trevorhaven,secundaria
-116,sur,Port Josefurt,secundaria
-117,norte,New Jacquelineport,principal
-118,norte,North Julie,secundaria
-119,centro,East Danielborough,secundaria
-120,sur,East Johnton,secundaria
-121,centro,West Michaelport,principal
-122,centro,Jillborough,secundaria
-123,centro,Lake Brianmouth,principal
-124,norte,Wardberg,secundaria
-125,norte,New Lorifort,secundaria
-126,norte,Gregorymouth,secundaria
-127,norte,Thomasville,principal
-128,norte,New Traci,secundaria
-129,norte,Lake Tinahaven,secundaria
-130,sur,Adrienneberg,principal
-131,centro,Sullivanton,principal
-132,centro,Port Jennifer,secundaria
-133,sur,New James,secundaria
-134,norte,Ginaberg,secundaria
-135,norte,Watershaven,principal
-136,sur,Russellport,secundaria
-137,norte,West Steven,principal
-138,sur,Lake Christina,secundaria
-139,centro,New Zachary,secundaria
-140,centro,Turnerview,secundaria
-141,sur,New Anna,principal
-142,sur,Priceshire,principal
-143,norte,West Michael,secundaria
-144,norte,Zimmermantown,principal
-145,sur,Patriciastad,principal
-146,norte,Sydneytown,principal
-147,norte,East Joshuaview,secundaria
-148,sur,East Scott,principal
-149,sur,West Brianna,principal
-150,sur,Ashleechester,principal
-151,centro,Garretttown,secundaria
-152,centro,East Kristinaland,principal
-153,sur,South Katherineton,principal
-154,sur,Edwardsview,secundaria
-155,norte,Matthewport,principal
-156,sur,Samanthaborough,secundaria
-157,sur,Debbieville,secundaria
-158,sur,South Melissabury,secundaria
-159,norte,West Daniel,secundaria
-160,norte,North Timothytown,principal
-161,centro,Torresland,secundaria
-162,norte,North Stephenville,principal
-163,norte,Frankberg,principal
-164,norte,New Thomasview,secundaria
-165,norte,Hancockland,principal
-166,norte,Jerryside,secundaria
-167,sur,North Shannonborough,secundaria
-168,centro,Jessicafort,principal
-169,sur,Katherineberg,secundaria
-170,centro,Jodimouth,secundaria
-171,norte,Matatown,secundaria
-172,centro,Duncanton,principal
-173,centro,Adrianstad,secundaria
-174,sur,South Paulmouth,secundaria
-175,norte,Elizabethmouth,secundaria
-176,sur,Suttonhaven,principal
-177,centro,Johnsonmouth,secundaria
-178,sur,Perryfurt,secundaria
-179,sur,South Natasha,secundaria
-180,norte,South Jesusbury,secundaria
-181,norte,Lake Brittany,secundaria
-182,sur,Amandafort,secundaria
-183,norte,East Jennifer,principal
-184,centro,Lynnbury,secundaria
-185,norte,South Victormouth,secundaria
-186,sur,Lake Kathryn,secundaria
-187,centro,East Lindachester,secundaria
-188,centro,Guerramouth,principal
-189,norte,South David,principal
-190,centro,South Daniel,principal
-191,sur,Aliciaburgh,secundaria
-192,norte,Kristentown,principal
-193,centro,New Richardfort,secundaria
-194,sur,East Michael,principal
-195,sur,North Audreyton,principal
-196,centro,Sanchezhaven,secundaria
-197,norte,South David,principal
-198,sur,Port Andrea,secundaria
-199,centro,South Morganbury,principal
-200,sur,Jenniferhaven,secundaria
+1,norte,Lake Jessica,secundaria
+2,norte,East Anthonyport,secundaria
+3,centro,North Kristy,principal
+4,norte,Port Kathryn,principal
+5,sur,Kevintown,principal
+6,centro,Bennettton,principal
+7,centro,East Michael,secundaria
+8,centro,Tranport,secundaria
+9,norte,Williamsfort,principal
+10,centro,West Andrew,secundaria
+11,centro,Melissaborough,secundaria
+12,centro,Monicashire,secundaria
+13,sur,Port Juliamouth,secundaria
+14,centro,North Kristyshire,principal
+15,centro,Martinezmouth,secundaria
+16,sur,Kellyburgh,principal
+17,centro,East Nicholas,secundaria
+18,centro,Benjaminborough,principal
+19,sur,North Alexhaven,principal
+20,norte,Carolineton,principal
+21,centro,East Megan,principal
+22,centro,South Sandy,secundaria
+23,norte,Brianland,principal
+24,norte,Port Calebchester,secundaria
+25,sur,Estesmouth,secundaria
+26,norte,Beckberg,secundaria
+27,norte,Thomashaven,secundaria
+28,norte,Dickersonburgh,principal
+29,norte,Port Christine,principal
+30,norte,Beckyborough,secundaria
+31,norte,East Aliceland,principal
+32,norte,Eugenefort,secundaria
+33,sur,Dudleymouth,secundaria
+34,sur,Josephfort,secundaria
+35,sur,North Christopherborough,principal
+36,sur,Port Robert,secundaria
+37,norte,Port Hannah,secundaria
+38,norte,Alyssaton,principal
+39,norte,Nelsonville,secundaria
+40,norte,Morrisberg,secundaria
+41,centro,Turnerside,principal
+42,centro,Wheelerville,principal
+43,centro,North Theresahaven,secundaria
+44,centro,Jennifertown,principal
+45,sur,Port Amanda,principal
+46,norte,Deannamouth,principal
+47,sur,West Biancaberg,secundaria
+48,sur,Leonville,principal
+49,sur,Mejiabury,principal
+50,centro,Port Margaretfort,principal
+51,sur,Port Christopherton,principal
+52,centro,East Meredithburgh,secundaria
+53,norte,Schaeferton,secundaria
+54,norte,Rebeccahaven,principal
+55,norte,Thomasstad,secundaria
+56,norte,Lopezfort,principal
+57,centro,West Cameron,principal
+58,norte,Vasquezhaven,principal
+59,norte,Thomasfort,principal
+60,centro,Arnoldville,secundaria
+61,sur,Ritterville,principal
+62,centro,Port Leroy,principal
+63,norte,Aaronborough,principal
+64,sur,North Regina,principal
+65,sur,Port Jennifertown,principal
+66,norte,Bellside,principal
+67,sur,Mayobury,principal
+68,centro,Patrickville,principal
+69,centro,East Jill,secundaria
+70,norte,West Charles,secundaria
+71,norte,North Shawnborough,secundaria
+72,norte,New Holly,secundaria
+73,norte,New Sabrinaton,secundaria
+74,norte,Taylorview,secundaria
+75,sur,South Amanda,secundaria
+76,norte,Harrellville,secundaria
+77,centro,East Davidville,secundaria
+78,norte,Timothychester,principal
+79,sur,South Christopherfort,secundaria
+80,sur,Carpentermouth,secundaria
+81,centro,Maureenshire,principal
+82,sur,Oliverport,secundaria
+83,sur,Smithberg,principal
+84,norte,Johnfort,secundaria
+85,sur,Port Matthewstad,secundaria
+86,norte,Lake Meghan,secundaria
+87,norte,Hurleyhaven,secundaria
+88,norte,North Anna,secundaria
+89,centro,Lyonsshire,secundaria
+90,centro,New Kenneth,secundaria
+91,sur,Brianmouth,principal
+92,norte,Williamport,principal
+93,norte,New Alexis,secundaria
+94,centro,Kristinaside,principal
+95,sur,Alvarezfurt,secundaria
+96,sur,Williamfurt,principal
+97,norte,Torreshaven,secundaria
+98,sur,Michaelland,secundaria
+99,norte,South Shellyberg,secundaria
+100,sur,East Feliciaborough,secundaria
+101,sur,East Rileychester,secundaria
+102,norte,Port Gregory,secundaria
+103,norte,Reyesberg,secundaria
+104,sur,Tiffanyburgh,secundaria
+105,sur,Lake Kimberly,secundaria
+106,norte,Theresafurt,principal
+107,centro,Westberg,principal
+108,norte,South Tyler,principal
+109,centro,North Sarashire,secundaria
+110,centro,Sydneyside,principal
+111,centro,Edwardtown,principal
+112,sur,West Collin,principal
+113,sur,Carlafort,secundaria
+114,sur,West Holly,secundaria
+115,centro,West Kevin,principal
+116,norte,West Stephanie,principal
+117,centro,Sheppardside,principal
+118,centro,Charlesmouth,principal
+119,centro,Allenmouth,principal
+120,centro,Lake Barbaraton,principal
+121,sur,Robertville,principal
+122,norte,Douglashaven,secundaria
+123,sur,Lucashaven,principal
+124,sur,Thomastown,secundaria
+125,centro,North Rachel,principal
+126,norte,Pattersonborough,principal
+127,centro,South Cheryl,principal
+128,centro,North Christopherbury,secundaria
+129,centro,Smithport,secundaria
+130,norte,Port Ryan,principal
+131,sur,Isaacport,secundaria
+132,sur,Lewisview,secundaria
+133,centro,Reedfort,secundaria
+134,centro,Smithchester,principal
+135,centro,New Jamesstad,principal
+136,sur,East Amy,secundaria
+137,norte,South Ernestside,secundaria
+138,sur,Lake Hollyfurt,secundaria
+139,norte,Lake Tiffany,secundaria
+140,sur,Neiltown,secundaria
+141,centro,Heathershire,principal
+142,sur,West Norman,principal
+143,centro,Millerland,secundaria
+144,sur,Josephburgh,principal
+145,centro,Lake Tamaraville,principal
+146,norte,Tamaraview,secundaria
+147,centro,Angelafurt,principal
+148,norte,Robertshaven,secundaria
+149,norte,Cherylmouth,principal
+150,sur,Edwardsland,secundaria
+151,norte,South Robertland,principal
+152,norte,East Donnabury,secundaria
+153,norte,West Meagan,principal
+154,norte,West Andrew,secundaria
+155,centro,Lake Donald,principal
+156,centro,New Keith,principal
+157,norte,Andrewhaven,principal
+158,centro,Reedton,principal
+159,centro,Davistown,principal
+160,centro,East Sarah,secundaria
+161,sur,Jenningsborough,principal
+162,centro,Port Courtney,principal
+163,norte,Reillyport,secundaria
+164,centro,Carlamouth,secundaria
+165,norte,Lake Dana,principal
+166,centro,Edwardtown,principal
+167,norte,Perezfurt,secundaria
+168,centro,Andrewmouth,secundaria
+169,sur,Juliemouth,principal
+170,centro,New Melanieshire,secundaria
+171,norte,Gibsonmouth,principal
+172,norte,Cherylhaven,principal
+173,sur,Lake Johnny,principal
+174,sur,Edwardshire,secundaria
+175,centro,Lake Christopher,secundaria
+176,centro,Lake Maria,secundaria
+177,sur,Comptonland,principal
+178,centro,North Jessica,secundaria
+179,sur,Elizabethfort,principal
+180,centro,West Shanetown,principal
+181,norte,Fletcherburgh,secundaria
+182,centro,Cruzburgh,principal
+183,norte,Robertborough,principal
+184,sur,Port Ashley,secundaria
+185,sur,Michaelview,principal
+186,centro,Myersport,secundaria
+187,norte,Zavalamouth,secundaria
+188,centro,Normanstad,secundaria
+189,norte,North Bradleystad,principal
+190,centro,West Hectormouth,secundaria
+191,centro,Charlotteview,principal
+192,norte,East Emily,secundaria
+193,norte,West Karenbury,secundaria
+194,norte,West Josephstad,principal
+195,centro,Johnsonmouth,principal
+196,sur,East Manuel,principal
+197,norte,Arroyoborough,secundaria
+198,sur,East Edwardchester,principal
+199,centro,Port Ericport,secundaria
+200,centro,Erinberg,secundaria

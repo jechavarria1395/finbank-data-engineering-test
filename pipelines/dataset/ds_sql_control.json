@@ -1,0 +1,46 @@
+{
+    "name": "ds_sql_control",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_sql_finbank",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "id",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "schema_name",
+                "type": "varchar"
+            },
+            {
+                "name": "table_name",
+                "type": "varchar"
+            },
+            {
+                "name": "layer",
+                "type": "varchar"
+            },
+            {
+                "name": "destination_path",
+                "type": "varchar"
+            },
+            {
+                "name": "load_type",
+                "type": "varchar"
+            },
+            {
+                "name": "is_active",
+                "type": "bit"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "control_ingestion"
+        }
+    }
+}

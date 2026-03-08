@@ -17,40 +17,49 @@ TrustServerCertificate=no;
 Connection Timeout=30;
 """
 
-# crear conexión
 conn = pyodbc.connect(connection_string)
 cursor = conn.cursor()
 
-# optimización
 cursor.fast_executemany = True
+cursor.setinputsizes([(pyodbc.SQL_VARCHAR, 255)] * 8)
 
 print("Connected to Azure SQL")
 
 tables = [
-    "dim_clientes",
-    "dim_productos",
-    "dim_sucursales",
     "fact_transacciones",
     "fact_creditos"
 ]
 
+chunk_size = 5000
+
 for table in tables:
 
-    print(f"Loading {table}")
+    print(f"\nLoading {table}")
 
-    df = pd.read_csv(f"{table}.csv")
+    columns = None
+    sql = None
+    total_inserted = 0
 
-    columns = ",".join(df.columns)
-    values = ",".join(["?"] * len(df.columns))
+    for chunk in pd.read_csv(f"{table}.csv", chunksize=chunk_size):
 
-    sql = f"INSERT INTO {table} ({columns}) VALUES ({values})"
+        for col in chunk.columns:
+            if chunk[col].dtype == "object":
+                chunk[col] = chunk[col].astype(str)
 
-    cursor.executemany(sql, df.values.tolist())
+        if columns is None:
+            columns = ",".join(chunk.columns)
+            values = ",".join(["?"] * len(chunk.columns))
+            sql = f"INSERT INTO {table} ({columns}) VALUES ({values})"
 
-    conn.commit()
+        cursor.executemany(sql, chunk.values.tolist())
+        conn.commit()
 
-    print(f"{table} loaded")
+        total_inserted += len(chunk)
+
+        print(f"{table}: inserted {total_inserted}")
+
+    print(f"{table} loaded successfully")
 
 conn.close()
 
-print("All data loaded successfully")
+print("\nAll data loaded successfully")

@@ -1,0 +1,146 @@
+{
+    "name": "pl_bronze_ingestion_sql",
+    "properties": {
+        "activities": [
+            {
+                "name": "FE_bronze",
+                "type": "ForEach",
+                "dependsOn": [
+                    {
+                        "activity": "lookup_control_table",
+                        "dependencyConditions": [
+                            "Succeeded"
+                        ]
+                    }
+                ],
+                "userProperties": [],
+                "typeProperties": {
+                    "items": {
+                        "value": "@activity('lookup_control_table').output.value",
+                        "type": "Expression"
+                    },
+                    "activities": [
+                        {
+                            "name": "copy_sql_to_bronze",
+                            "type": "Copy",
+                            "dependsOn": [],
+                            "policy": {
+                                "timeout": "0.12:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "typeProperties": {
+                                "source": {
+                                    "type": "AzureSqlSource",
+                                    "queryTimeout": "02:00:00",
+                                    "partitionOption": "None"
+                                },
+                                "sink": {
+                                    "type": "ParquetSink",
+                                    "storeSettings": {
+                                        "type": "AzureBlobFSWriteSettings",
+                                        "metadata": [
+                                            {
+                                                "name": "ingestion_timestamp",
+                                                "value": {
+                                                    "value": "@utcnow()",
+                                                    "type": "Expression"
+                                                }
+                                            },
+                                            {
+                                                "name": "source_system",
+                                                "value": "\"sql_finbank\""
+                                            },
+                                            {
+                                                "name": "batch_id",
+                                                "value": {
+                                                    "value": "@pipeline().RunId",
+                                                    "type": "Expression"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "formatSettings": {
+                                        "type": "ParquetWriteSettings"
+                                    }
+                                },
+                                "enableStaging": false,
+                                "translator": {
+                                    "type": "TabularTranslator",
+                                    "typeConversion": true,
+                                    "typeConversionSettings": {
+                                        "allowDataTruncation": true,
+                                        "treatBooleanAsNumber": false
+                                    }
+                                }
+                            },
+                            "inputs": [
+                                {
+                                    "referenceName": "ds_sql_table_dynamic",
+                                    "type": "DatasetReference",
+                                    "parameters": {
+                                        "schema_name": "@item().schema_name",
+                                        "table_name": "@item().table_name"
+                                    }
+                                }
+                            ],
+                            "outputs": [
+                                {
+                                    "referenceName": "ds_adls_bronze_dynamic",
+                                    "type": "DatasetReference",
+                                    "parameters": {
+                                        "folder_path": {
+                                            "value": "@concat(\n    item().fuente,'/',item().sistema,'/',item().schema_name,'_',item().table_name,'/', formatDateTime(convertFromUtc(utcnow(),'SA Pacific Standard Time'),'yyyy/MM/dd'))",
+                                            "type": "Expression"
+                                        },
+                                        "file_name": {
+                                            "value": "@concat(\n    'tbl_', item().table_name\n)",
+                                            "type": "Expression"
+                                        },
+                                        "container": {
+                                            "value": "@item().layer",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "lookup_control_table",
+                "type": "Lookup",
+                "dependsOn": [],
+                "policy": {
+                    "timeout": "0.12:00:00",
+                    "retry": 0,
+                    "retryIntervalInSeconds": 30,
+                    "secureOutput": false,
+                    "secureInput": false
+                },
+                "userProperties": [],
+                "typeProperties": {
+                    "source": {
+                        "type": "AzureSqlSource",
+                        "sqlReaderQuery": "SELECT *\nFROM control_ingestion\nWHERE is_active = 1",
+                        "queryTimeout": "02:00:00",
+                        "partitionOption": "None"
+                    },
+                    "dataset": {
+                        "referenceName": "ds_sql_control",
+                        "type": "DatasetReference"
+                    },
+                    "firstRowOnly": false
+                }
+            }
+        ],
+        "folder": {
+            "name": "FinBank/bronze"
+        },
+        "annotations": []
+    }
+}
